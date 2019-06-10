@@ -14,6 +14,22 @@ mark
 	font-style: italic;
 }
 
+table
+{
+    border-style: double;
+}
+
+td, th
+{
+    text-align: center;
+    outline-style: solid;
+}
+
+.fond-vert
+{
+    background-color: palegreen;
+}
+
 /*
 Selecteurs avancés
 
