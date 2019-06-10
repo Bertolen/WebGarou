@@ -16,13 +16,16 @@ mark
 
 table
 {
-    border-style: double;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
 }
 
 td, th
 {
     text-align: center;
     outline-style: solid;
+    outline-width: 1px;
 }
 
 .fond-vert
