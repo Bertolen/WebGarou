@@ -1,6 +1,15 @@
 // Récupération de la racine du site
 function getBaseUrl() {
-    return window.location.href.match(/^.*\/\/[\w.:]*\//);
+
+    var chemin = window.location.href;
+    
+    if(chemin.startsWith('file:')) {
+    // A utiliser sur un navigeur
+    return chemin.match(/^.*WebGarou[\\|\/]/);        
+    }
+    
+    // A utiliser sur la vue dynamique de Brackets
+    return chemin.match(/^.*\/\/[\w.:]*\//);
 }
 
 // Liste des liens
